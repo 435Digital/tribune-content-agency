@@ -7,5 +7,5 @@
 <?php wp_footer(); ?>
 <link rel="stylesheet" media="(min-width: 48em)" href="/wp-content/themes/tca-2015/css/mq1.css" type="text/css" />
 <link rel="stylesheet" media="(min-width: 48em)" href="/wp-content/themes/tca-2015/css/f-serif.css" type="text/css" />
-<?php echo 'bob'; ?>
+
 </body></html>

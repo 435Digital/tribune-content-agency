@@ -3,7 +3,7 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title></title>
 <?php wp_head(); ?>
-<link rel="stylesheet" href="/wp-content/themes/tca-2015/style.css" type="text/css"/>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/wp-content/themes/tca-2015/style.css" type="text/css"/>
 <link rel="stylesheet" media="(min-width: 20em)" href="/wp-content/themes/tca-2015/css/f-sans.css" type="text/css" />
 </head>
 <body id="body" data-ua="" <?php body_class(); ?>>
