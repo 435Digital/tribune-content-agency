@@ -5,7 +5,7 @@
 </footer>
 <source id="opera">
 <?php wp_footer(); ?>
-<link rel="stylesheet" media="(min-width: 48em)" href="/wp-content/themes/tca-2015/css/mq1.css" type="text/css" />
-<link rel="stylesheet" media="(min-width: 48em)" href="/wp-content/themes/tca-2015/css/f-serif.css" type="text/css" />
+<link rel="stylesheet" media="(min-width: 48em)" href="<?php echo get_template_directory_uri(); ?>/css/mq1.css" type="text/css" />
+<link rel="stylesheet" media="(min-width: 48em)" href="<?php echo get_template_directory_uri(); ?>/css/f-serif.css" type="text/css" />
 
 </body></html>
