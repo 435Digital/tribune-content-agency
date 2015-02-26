@@ -58,6 +58,12 @@ a.link-grey-drk{color:#46556d}
 .link-white a,
 a.link-white{color:#fff}
 
+.bord-black{border-color:#333}
+.back-black{background-color:#333}
+.font-black,
+.link-black a,
+a.link-black{color:#333}
+
 .f-up{text-transform: uppercase;}
 .f-cen{text-align: center;}
 [class*="f-ser"]{font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif}
@@ -390,6 +396,16 @@ a.link-white{color:#fff}
 			    column-count: 2;
 				}
 			.col2 li{padding-top:0;}
+
+/*topic page*/
+	.topic-article-loop-link{
+		display:inline-block;
+		width:50%;
+		padding-bottom:1em;
+		vertical-align:top;
+	}
+
+	.topic-first-line{display: block;width:100%;}
 /*footer*/
 
 	.ftr-m{

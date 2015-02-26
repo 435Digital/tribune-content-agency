@@ -96,7 +96,7 @@ include 'functions/shortcode-column.php';
 include 'functions/shortcode-loop.php';
 include 'functions/shortcode-topics.php';
 include 'images/icons.php';
-include 'functions/the_tax_widget.php';
+//include 'functions/the_tax_widget.php';
 include 'functions/shortcode-also.php';
 
 
