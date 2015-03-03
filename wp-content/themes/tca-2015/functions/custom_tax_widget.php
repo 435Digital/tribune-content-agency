@@ -1,5 +1,4 @@
-<?php
-class custom_tax_widget extends WP_Widget {
+<?php class custom_tax_widget extends WP_Widget {
     function custom_tax_widget() {
         $widget_ops = array( 'classname' => 'Tribune Premium Content ', 'description' => 'Displays categories' );
     // widget control settings
@@ -46,5 +45,4 @@ class custom_tax_widget extends WP_Widget {
     }
     }
 }
-register_widget('custom_tax_widget');
-?>
+register_widget('custom_tax_widget'); ?>

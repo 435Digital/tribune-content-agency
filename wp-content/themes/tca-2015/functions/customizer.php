@@ -1,5 +1,4 @@
-<?php
-function mytheme_customize_register( $wp_customize ) {
+<?php function mytheme_customize_register( $wp_customize ) {
 //All our sections, settings, and controls will be added here
 
 //echo get_theme_mod('logo_setting');

@@ -66,22 +66,16 @@ a.link-black{color:#333}
 
 .f-up{text-transform: uppercase;}
 .f-cen{text-align: center;}
-[class*="f-ser"]{font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif}
+[class*="f-ser"]{
+	font-family: georgia, roboto-serif ,serif;
+	font-weight: 200}
 	
 	[class*="f-san"],
 	[value*="Search"],
 		.content-m a[title*="button"],
-		.content-m a[title*="Button"]
-		.content-m h1,
-		.content-m h2,
-		.content-m h3,
-		.content-m h4{font-family:sans-serif}
+		.content-m a[title*="Button"]{font-family:sans-serif}
 
-	.f-san-200,
-		.content-m h1,
-		.content-m h2,
-		.content-m h3,
-		.content-m h4{
+	.f-san-200{
 			font-weight:200
 		}
 	.f-san-400{font-weight:400}

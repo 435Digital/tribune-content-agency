@@ -39,4 +39,4 @@ function loop_shortcode( $atts ) {
 
 		return $the_return;
 }
-add_shortcode( 'loop', 'loop_shortcode' );?>
+add_shortcode( 'loop', 'loop_shortcode' ); ?>

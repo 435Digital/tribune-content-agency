@@ -1,5 +1,4 @@
 <?php
-//allow svg
   function cc_mime_types( $mimes ){
     $mimes['svg'] = 'image/svg+xml';
     return $mimes;
@@ -39,7 +38,6 @@ add_filter('the_content', 'filter_ptags_on_images');
   add_action('init', 'enq_scripts');
 //add support for post thumbnails
 add_theme_support( 'post-thumbnails' );
-
 
 
 // sanitize shortcodes
@@ -96,8 +94,5 @@ include 'functions/shortcode-column.php';
 include 'functions/shortcode-loop.php';
 include 'functions/shortcode-topics.php';
 include 'images/icons.php';
-//include 'functions/the_tax_widget.php';
 include 'functions/shortcode-also.php';
-
-
 ?>

@@ -22,8 +22,4 @@
 [class*="f-san"],
 [value*="Search"],
 		.content-m a[title*="button"],
-		.content-m a[title*="Button"],
-		.content-m h1,
-		.content-m h2,
-		.content-m h3,
-		.content-m h4{font-family:'open-sans'}
+		.content-m a[title*="Button"]{font-family:'open-sans'}
