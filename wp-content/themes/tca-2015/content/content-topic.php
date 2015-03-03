@@ -13,7 +13,7 @@ $paged_a = get_query_var('paged') ? get_query_var('paged') : 1;
 interface pageable{
   public function article();
 }
-echo '<main class="content-m f-ser"><div class="content-simple">';
+echo '<main class="content-m f-ser"><div class="content-simple"><div class="column w3-4">';
 
 	class page1_loop implements pageable{
   		public function article(){
@@ -44,5 +44,5 @@ $art_lnk->article();
 
 
 
-echo '</div></main>';
+echo '</div><aside class="w1-4"></aside></div></main>';
 ?>

@@ -67,25 +67,17 @@
 
 							if(get_field('product_type',$term)=='Image' && $img_url!=''){							
 
-								$the_loop_return .= '<a href="'.get_the_permalink().'">
-														<span class="topic-first-line font-grey-med f-up">'.$term->name.' '.get_the_date('m/d/Y').'</span>
-														<img src="'.$img_url.'" alt="'.get_the_title().'" style="background-color:#ddd;">
-													</a>';
+								$the_loop_return .= '<a class="article-loop-link-img bord-grey-med" href="'.get_the_permalink().'">
+								<span class="article-loop-date-prod topic-first-line font-grey-med f-up">'.$term->name.' <time class="f-san" date-time="'.get_the_date('Y-m-d').'"">'.get_the_date('m/d/Y').'</time></span><img src="'.$img_url.'" alt="'.get_the_title().'"></a>';
 
 							}else{
 								
 								$the_img='';
 								if($img_url!=''){
-									$the_img='<img src="'.$img_url.'" alt="">';
+									$the_img='<img src="'.$img_url.'" alt="" class="article-loop-img">';
 								}
 
-								$the_loop_return .= '
-								<a href="'.get_the_permalink().'" class="">
-									<span class="topic-first-line font-grey-med f-up">'.$term->name.' '.get_the_date('m/d/Y').'</span>
-									'.$the_img.'
-									<h3 class="font-black f-ser-bold">'.get_the_title().'</h3>
-									<p class="font-grey-med f-ser">'.get_the_excerpt().'</p>
-								</a>';
+								$the_loop_return .= '<a class="article-loop-link-txt-img bord-grey-med" href="'.get_the_permalink().'">'.$the_img.'<div class="article-loop-txt"><span class="article-loop-date-prod font-grey-med f-up">'.$term->name.' <time class="f-san" date-time="'.get_the_date('Y-m-d').'">'.get_the_date('m/d/Y').'</time></span><h3 class="article-loop-title font-black f-ser-bold">'.get_the_title().'</h3><p class="article-loop-excerpt font-grey-med f-ser">'.get_the_excerpt().'</p></div></a>';
 							
 							}/*end elseif*/
 							
@@ -98,12 +90,10 @@
 			}/*end if($loop_prod_type=='Image')*/
 
 
-			echo '<br>ARTICLES<br>'.$the_loop_return;
+			echo '<div class="article-loop"><h2 class="article-loop-label f-up f-san-200 font-blue bord-grey-med">Sample Articles</h2>'.$the_loop_return.'</div>';
 
 			echo get_next_posts_link( __( '>>More Articles' ) );
 
 			wp_reset_query();
-			
-
 
 ?>

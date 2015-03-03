@@ -50,7 +50,7 @@ body{
 			}
 /*top bar*/
 	.top-bar{
-		font-size: .625em;
+		font-size: .6875em;
 		padding-right: 4em;
 	}
 
@@ -98,10 +98,11 @@ body{
 	 	.top-bar input[type="submit"]{
 			right: 0;
 	 		position: absolute;
-	 		top:-.875em;
-	 	-ms-transform:translateX(0) scale(.875);
-	-webkit-transform:translate3d(0,0,0) scale(.875);
-	        transform:translate3d(0,0,0) scale(.875);
+	 		top:-.775em;
+	 		font-weight: 
+	 	-ms-transform:translateX(0) scale(.625);
+	-webkit-transform:translate3d(0,0,0) scale(.625);
+	        transform:translate3d(0,0,0) scale(.625);
 	 	}
 
 	 	.top-bar input[name="s"]:focus+input[type="submit"]{
@@ -175,7 +176,7 @@ body{
 
 	/*columns*/
 		.column[class*="w"]{
-			display: block;
+			display:block;
 			float:left;
 			}
 		[class*="w"][class*="-"]:first-of-type{
@@ -184,7 +185,13 @@ body{
 		.w1-3{width:30%}
 		.w2-3{width:65%}
 		.w1-5{width:16%}
-		
+
+		.w1-4{width:21.5%}
+		.w3-4{width:73.75%}
+
+
+		.w1-4+.w3-4,
+		.w3-4+.w1-4,
 		.w1-3+.w1-3,
 		.w1-3+.w2-3,
 		.w2-3+.w1-3{
