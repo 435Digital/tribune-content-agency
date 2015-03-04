@@ -5,8 +5,7 @@
 
 			$taxonomy_name = 'product_cat';
 
-
-			echo '<br>TOPICS1<br>';
+			$topics="";
 
 			foreach ( get_term_children( $queried_object->term_id, 'product_cat' ) as $child ) {
 
@@ -14,11 +13,18 @@
 					
 					if(get_field('cat-type', $chi_term) == 'topic'){
 
-						echo do_shortcode('[topics slug="'.$chi_term->slug.'" title="'.$chi_term->name.'"]');
+						$topics .= do_shortcode('[topics slug="'.$chi_term->slug.'" title="'.$chi_term->name.'"]');
 
 					}
 
 
 			}
+
+			//$topics .= '<br>TOPICS1<br>';
+			
+			if ($topics!= ""){
+				echo '<br>TOPICS1<br>'.$topics;
+			}
+
 
 ?>
