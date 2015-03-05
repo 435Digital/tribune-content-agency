@@ -55,7 +55,8 @@
 
 				while ( $q_articles->have_posts() ) :  $q_articles->the_post();
 
-					$img_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail-size', false)[0];
+					$img_arr = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail-size', false);
+					$img_url = $img_arr[0];
 					//echo $img_url;
 
 					foreach (get_the_terms( get_the_id(),'product_cat') as $term) {

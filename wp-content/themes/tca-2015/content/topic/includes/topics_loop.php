@@ -13,7 +13,7 @@
 					
 					if(get_field('cat-type', $chi_term) == 'topic'){
 
-						$topics .= do_shortcode('[topics slug="'.$chi_term->slug.'" title="'.$chi_term->name.'"]');
+						$topics .= '<div>'.do_shortcode('[topics slug="'.$chi_term->slug.'" title="'.$chi_term->name.'" columns="four"]').'</div>';
 
 					}
 
@@ -23,7 +23,7 @@
 			//$topics .= '<br>TOPICS1<br>';
 			
 			if ($topics!= ""){
-				echo '<br>TOPICS1<br>'.$topics;
+				echo $topics;
 			}
 
 

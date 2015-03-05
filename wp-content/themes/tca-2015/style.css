@@ -380,12 +380,13 @@ a.link-black{color:#333}
 			/*topics shortcode*/
 			.sc-topic-loop{
 				display: inline-block;
+				padding-top: 0;
 			}
 
 			.sc-topic-loop-logo{
 				background-repeat: no-repeat;
 				display:inline-block;
-				background-size:75%;
+				background-size:cover;
 				background-position: center center;
 				width:100%;
 				padding:100% 0 0;

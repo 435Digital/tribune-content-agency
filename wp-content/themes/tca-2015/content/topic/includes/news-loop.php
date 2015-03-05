@@ -20,10 +20,12 @@ if($query->have_posts()==1){
 		$query->the_post();
 		
 		$tags = '';
-
-		  foreach(get_the_tags() as $tag) {
+		$tags_arr = get_the_tags();
+		if (!empty($tags_arr)) {
+			foreach(get_the_tags()as $tag) {
 		    $tags .= $tag->name . ' '; 
 		  }
+		}
 
 		  if (!empty($tags)){
 		  	$tags='<div class="news-tags f-san-200 font-grey-med">'.$tags.'</div>';
@@ -43,5 +45,4 @@ if($query->have_posts()==1){
 
 	wp_reset_query();
 }
-
  ?>

@@ -9,7 +9,7 @@ function topic_shortcode( $atts ) {
 		'slug' => '',
 		'title'=> '',
 		'columns'=>'',
-		'background'=>'',
+		'background'=>null,
 		'category_type'=>'',
 		'border_radius'=>''
 		), $atts )
@@ -37,6 +37,7 @@ function topic_shortcode( $atts ) {
 	$cat_type = get_field('cat-type',$term);
 	
 	$css_color = '';
+	
 		if($atts['background']=='true'){
 			$the_color = service_color($term);
 			$css_color = 'background-color:'.$the_color.'; ';
@@ -92,6 +93,11 @@ function topic_shortcode( $atts ) {
 			$width="w1-5";
 	}
 
+	$title = '';
+	if(!empty($atts['title'])){
+		$title = '<h2 class="article-loop-label f-up f-san-200 font-blue bord-grey-med">'.$atts['title'].'</h2>';
+	}
+
 	foreach ( $termchildren as $child ) {
 				//if($child->parent == 0 ){echo $child->name;}
 
@@ -111,6 +117,6 @@ function topic_shortcode( $atts ) {
 				}
 			}
 
-		return $the_return;
+		return $title.$the_return;
 }
 add_shortcode( 'topics', 'topic_shortcode' );?>

@@ -206,6 +206,7 @@ body{
 		.w1-5,
 		.w1-4{
 			margin-left: 5%;
+			vertical-align: top;
 			}
 
 		.w1-5:nth-of-type(5n+1),
